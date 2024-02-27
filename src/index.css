@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400; */
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  /* font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%; */
+  scroll-behavior: smooth;
+  cursor: default;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* cursor: none; */
+}
+
+.rotateAnimation{
+  animation-name: animate;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation-timing-function: linear;
+}
+
+@keyframes animate {
+  0%{ transform: rotateZ(0deg); }
+  100%{ transform: rotateZ(360deg); }
+}

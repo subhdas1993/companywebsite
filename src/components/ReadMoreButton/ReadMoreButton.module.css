@@ -1,0 +1,11 @@
+.mainButton:hover > div{
+    background-color: #DAA520;
+}
+
+.mainButton:hover > div > div{
+    color: #242424;
+}
+
+.mainButton > div{
+    transition: background-color 0.3s ease-in;   
+}

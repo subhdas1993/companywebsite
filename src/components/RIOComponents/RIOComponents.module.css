@@ -1,0 +1,61 @@
+.listOfImgBox {
+    position: absolute;
+    z-index: 2;
+    background: center / contain no-repeat;
+    width: 100%;
+    height: 100%;
+    /* background: [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-origin] [background-clip] [background-color]; */
+}
+
+.listOfImg1 {
+    background-image: url('../RIOComponents/images2/1.jpg');
+    filter: blur(10px);
+    transform: scale(1.5);
+    transition: transform 0.6s ease-out, filter 0.3s linear 0.6s;
+}
+
+.listOfImg2 {
+    background-image: url('../RIOComponents/images2/2.jpg');
+    filter: blur(10px);
+    transform: scale(1.5);
+    transition: transform 0.6s ease-out, filter 0.3s linear 0.6s;
+}
+
+.listOfImg3 {
+    background-image: url('../RIOComponents/images2/3.jpg');
+    filter: blur(10px);
+    transform: scale(1.5);
+    transition: transform 0.6s ease-out, filter 0.3s linear 0.6s;
+}
+
+.listOfImg4 {
+    background-image: url('../RIOComponents/images2/4.jpg');
+    filter: blur(10px);
+    transform: scale(1.5);
+    transition: transform 0.6s ease-out, filter 0.3s linear 0.6s;
+}
+
+.listOfImgBoxDisableBlur {
+    filter: none;
+    transform: scale(1);
+}
+
+.hiddenBox {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: #242424;
+    left: 0;
+    transition: left 0.3s ease-out;
+    transform-origin: right center;
+}
+
+.hiddenBoxDisable {
+    left: 100%;
+    filter: none;
+}
+
+.hbdTDelay2 {
+    transition-delay: 3s;
+}

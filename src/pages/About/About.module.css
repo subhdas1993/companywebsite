@@ -1,0 +1,189 @@
+.cclogo:not(:hover)>div:first-child {
+  z-index: 2;
+  opacity: 1;
+  transition: z-index 1s linear 1s, opacity 1s linear;
+  animation: zoomIn 1s linear 1 normal forwards;
+}
+
+.cclogo>div:last-child {
+  z-index: -2;
+  opacity: 0;
+  transition: z-index 1s linear 1s, opacity 1s linear;
+}
+
+.cclogo:hover>div:first-child {
+  z-index: -2;
+  opacity: 0;
+  transition: z-index 1s linear 1s, opacity 1s linear;
+  animation: zoomOut 1s linear 1 normal forwards;
+}
+
+.cclogo:hover>div:last-child {
+  z-index: 2;
+  opacity: 1;
+  transition: z-index 1s linear 1s, opacity 1s linear;
+}
+
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes wave {
+  from {
+    transform: translateY(0);
+    color: white;
+  }
+
+  to {
+    transform: translateY(90px);
+  }
+}
+
+.cclogo:hover .wavetext>span {
+  display: inline-block;
+  animation-duration: 0.5s;
+  animation-name: wave;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+.wavetext :nth-child(1) {
+  animation-delay: -0.6s;
+}
+
+.wavetext :nth-child(2) {
+  animation-delay: -0.59s;
+}
+
+.wavetext :nth-child(3) {
+  animation-delay: -0.58s;
+}
+
+.wavetext :nth-child(4) {
+  animation-delay: -0.57s;
+}
+
+.wavetext :nth-child(5) {
+  animation-delay: -0.56s;
+}
+
+.wavetext :nth-child(6) {
+  animation-delay: -0.55s;
+}
+
+.wavetext :nth-child(7) {
+  animation-delay: -0.54s;
+}
+
+.wavetext :nth-child(8) {
+  animation-delay: -0.53s;
+}
+
+.wavetext :nth-child(9) {
+  animation-delay: -0.52s;
+}
+
+.wavetext :nth-child(10) {
+  animation-delay: -0.51s;
+}
+
+.wavetext :nth-child(11) {
+  animation-delay: -0.50s;
+}
+
+.wavetext :nth-child(12) {
+  animation-delay: -0.49s;
+}
+
+.wavetext :nth-child(13) {
+  animation-delay: -0.48s;
+}
+
+.wavetext :nth-child(14) {
+  animation-delay: -0.47s;
+}
+
+.wavetext :nth-child(15) {
+  animation-delay: -0.46s;
+}
+
+.wavetext :nth-child(16) {
+  animation-delay: -0.45s;
+}
+
+.wavetext :nth-child(17) {
+  animation-delay: -0.44s;
+}
+
+.wavetext :nth-child(18) {
+  animation-delay: -0.43s;
+}
+
+.wavetext :nth-child(19) {
+  animation-delay: -0.42s;
+}
+
+.wavetext :nth-child(20) {
+  animation-delay: -0.41s;
+}
+
+.wavetext :nth-child(21) {
+  animation-delay: -0.40s;
+}
+
+.wavetext :nth-child(22) {
+  animation-delay: -0.39s;
+}

@@ -1,0 +1,11 @@
+.buttonstyle:hover{
+    background-color: grey;
+    color: black;
+    border-color: black;
+}
+
+a.buttonstyle:hover{
+    background-color: grey;
+    color: black;
+    border-color: black;
+}

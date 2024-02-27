@@ -1,0 +1,93 @@
+.navsubmenu1, .navfixedsubmenu1{
+    position: relative;
+    padding-right: 0.3vmax;
+}
+
+.navfixedsubmenu1{
+    overflow: hidden;
+    transition: overflow linear 0.8s;
+}
+.navsubmenu2{
+    position: absolute;
+    left: -100%;
+    top: 100%;
+    border: 1px solid gray;
+    background-color: rgb(24, 24, 24);
+    width: 300%;
+    z-index: -3;
+    transform: translate3d(0, 10%, 0);
+    opacity: 0;
+    transition: all linear 0.5s;
+}
+
+.navfixedsubmenu2{
+    position: absolute;
+    left: -100%;
+    top: 100%;
+    border: 1px solid gray;
+    background-color: rgb(24, 24, 24);
+    /* background-color: transparent; */
+    color: white;
+    width: 300%;
+    z-index: -3;
+    transform: translate3d(0, 10%, 0);
+    opacity: 0;
+    transition: all linear 0.5s;
+}
+
+.navsubmenu1:hover .navsubmenu2, .navfixedsubmenu1:hover .navfixedsubmenu2{
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    z-index: 3;
+    /* transition: all linear 2s; */
+}
+
+/* .navsubmenu1:hover{
+    overflow: visible;
+} */
+
+.navfixedsubmenu1:hover{
+    overflow: visible;
+}
+
+.arrowrotate{
+    transform: rotate(0) scale(1);
+    vertical-align: -10%;
+    transition: transform 1s ease-in-out;
+}
+
+.navsubmenu1:hover .arrowrotate, .navfixedsubmenu1:hover .arrowrotate{
+    transform: rotate(90deg) scale(1.5);
+}
+
+.menuEffect{
+    transition: right 0.5s ease-in-out;
+}
+
+.textStroke{
+    /* -webkit-text-stroke: 0.05vw rgba(255, 255, 255, 0.542); */
+    color: transparent;
+    background: rgb(255,255,255);
+    background: linear-gradient(-45deg, rgba(255,255,255,1) 40%, rgba(218,165,32,1) 50%, rgba(255,255,255,1) 60%);
+    background-clip: text;
+    background-size: 500%;
+    animation: movingGradient 6s linear infinite;
+}
+
+@keyframes movingGradient {
+    0%{
+        background-position-x: 120%;
+    }
+    100%{
+        background-position-x: -120%;
+    }
+}
+
+@-webkit-keyframes movingGradient {
+    0%{
+        background-position-x: 120%;
+    }
+    100%{
+        background-position-x: -120%;
+    }
+}

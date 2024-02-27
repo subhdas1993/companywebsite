@@ -1,0 +1,135 @@
+.movingStar {
+  -webkit-animation: starPathRotate;
+  animation: starPathRotate;
+  animation-direction: alternate-reverse;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+}
+
+@-webkit-keyframes starPathRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  5% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(var(--transform));
+    transform: rotate(var(--transform));
+  }
+
+  60% {
+    -webkit-transform: rotate(var(--transform));
+    transform: rotate(var(--transform));
+  }
+
+  95% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes starPathRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  5% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  40% {
+    -webkit-transform: rotate(var(--transform));
+    transform: rotate(var(--transform));
+  }
+
+  60% {
+    -webkit-transform: rotate(var(--transform));
+    transform: rotate(var(--transform));
+  }
+
+  95% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.firstImg {
+  background-image: url('../Home/images1/sectionimg1.jpg');
+  background-size: 96%;
+}
+
+.secondImg {
+  background-image: url('../Home/images1/sectionimg2.jpg');
+}
+
+.secondImg_MAX1024 {
+  background-image: url('../Home/images1/sectionimg2.jpg');
+  background-size: 75%;
+}
+
+.sectionSlideList {
+  position: relative;
+  background-color: #DAA520;
+  height: 5vmax;
+  z-index: 3;
+}
+
+.sectionSlideListBox {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  background-color: transparent;
+  top: -50%;
+  overflow: hidden;
+  z-index: 4;
+}
+
+.sectionSlideMenuBox {
+  position: absolute;
+  left: -1%;
+  width: 110%;
+  height: 40%;
+  padding: 0.5vmax;
+  transform: rotate(-1deg) translateY(75%);
+  background-color: #242424;
+}
+
+.slideMenu {
+  display: inline-block;
+  margin: 0 2vmax;
+  font-size: 2vmax;
+  letter-spacing: 0.5vmax;
+}
+
+.thirdImg {
+  background-image: url('../Home/images1/sectionimg3.jpg');
+}
+
+.forthImg {
+  background-image: url('../Home/images1/sectionimg4.jpg');
+  background-position-x: 40%;
+}

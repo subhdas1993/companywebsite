@@ -1,0 +1,21 @@
+.sectionIMG1 {
+    background-image: url('./images3/h1.jpg');
+    background-position: 80% center;
+}
+
+.sectionIMG2 {
+    background-image: url('./images3/h2.jpg');
+}
+
+.sectionIMG3 {
+    background-image: url('./images3/h3.jpg');
+}
+
+.sectionWritingMode {
+    writing-mode: vertical-rl;
+}
+
+.divrotation{
+    transform-origin: center;
+    transform: rotate(90deg) translateX(-20px);
+}
